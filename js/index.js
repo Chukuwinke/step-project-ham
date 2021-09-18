@@ -115,4 +115,62 @@ fetch("pictures.json")
   })
   .catch((error) => console.log(error));
 
+  // feedback logic
+let sliderThumbnails = document.querySelectorAll('.slider-thumbnail');
+let sliderContent = document.querySelectorAll('.feedback-container')
+let arrowLeft = document.getElementById('arrow-left')
+let arrowRight = document.getElementById('arrow-right')
+let current = 0;
+  const reset = () => {
+   sliderContent.forEach(element => {
+    if (element.classList.contains("feedback-active")) {
+      element.classList.remove("feedback-active");
+    }
+    
+   });
+   sliderThumbnails.forEach(element => {
+     element.style.position = ''
+   })
+  }
+  const initialContent = () => {
+    reset();
+    sliderContent[0].classList.add("feedback-active");
+    sliderThumbnails[0].style.position = 'relative'
+    sliderThumbnails[0].style.bottom = '15px'
+  }
+  const slideLeft = () =>{
+    reset();
+    sliderContent[current - 1].classList.add("feedback-active");
+    sliderThumbnails[current - 1].style.position = 'relative'
+    sliderThumbnails[current - 1].style.bottom = '15px'
+    current--;
+    console.log('left')
+
+  }
+  const slideRight = () =>{
+    reset();
+    sliderContent[current +1].classList.add("feedback-active");
+    sliderThumbnails[current + 1].style.position = 'relative'
+    sliderThumbnails[current + 1].style.bottom = '15px'
+    current++;
+    console.log('right')
+
+  }
+
+  arrowRight.onclick = () => {
+    if(current === sliderThumbnails.length - 1){
+      current = -1;
+    }
+    slideRight();
+  }
+  arrowLeft.onclick = () => {
+    if(current === 0){
+      current = sliderThumbnails.length;
+      
+    }
+    
+    slideLeft();
+  }
+  initialContent();
+
 
