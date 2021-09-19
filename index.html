@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/index.css">
     
@@ -21,13 +22,14 @@
             </div>
             <div class="menu-container">
                 <ul class="menu">
-                    <li class="menu__item">home</li>
-                    <li class="menu__item">About</li>
-                    <li class="menu__item">Blog</li>
-                    <li class="menu__item">Skills</li>
-                    <li class="menu__item">Service</li>
-                    <li class="menu__item">Work</li>
-                    <li class="menu__item">Testimonial</li>
+                    <li class="menu__item"><a href="#">home</a></li>
+                    <li class="menu__item"><a href="#">About</a></li>
+                    <li class="menu__item"><a href="#">Blog</a></li>
+                    <li class="menu__item"><a href="#">Skills</a></li>
+                    <li class="menu__item"><a href="#"> Service</a></li>
+                    <li class="menu__item"><a href="#">Work</a></li>
+                    <li class="menu__item"><a href="#">Testimonial</a></li>
+                    <img src="./img/header_section/Search icon 1.png" alt="" class="search-icon">
                 </ul>
             </div>
         </nav>
@@ -67,7 +69,10 @@
     <!-----------------------------------SERVICES SECTION--------------------------------------------------->
     <section class="services-section">
         <div class="services">
-            <h2 class="services__header">Our Services</h2>
+            <div class="services__header header-center">
+                <h2 class="mb-24">Our Services</h2>
+                <img src="./img/general/Style copy 2.svg" alt="" class="header-icon">
+            </div>
             <div class="services__tab container">
                 <ul class="services-tabs-menu">
                     <li class="services-tabs__title" data-tab-switch="web-design">Web Design</li>
@@ -184,7 +189,10 @@
     </section>
     <section class="work-section">
         <div class="work ">
-            <h2 class="work__header">Our Amazing Work</h2>
+            <div class="work__header header-center">
+                <h2 class="mb-24">Our Amazing Work</h2>
+                <img src="./img/general/Style copy 2.svg" alt="" class="header-icon">
+            </div>
             <div class="work__tab ">
                 <ul class="tabs">
                     <li class="tabs__title" data-work-tab="all">All</li>
@@ -202,7 +210,10 @@
     </section>
     <!-----------------------------------BREAKING-NEWS SECTION--------------------------------------------------->
     <section class="breaking-news-section">
-        <h2 class="breaking-news__header">Breaking News</h2>
+        <div class="breaking-news__header header-center">
+            <h2 class="mb-24">Breaking News</h2>
+            <img src="./img/general/Style copy 2.svg" alt="" class="header-icon">
+        </div>
         <div class="breaking-news container">
             <!-- try to use template strings-->
             <!--
@@ -219,7 +230,10 @@
     <!-----------------------------------FEEDBACK SECTION--------------------------------------------------->
     <section class="feedback-section">
         <div class="feedback">
-            <h1 class="feedback__header">What People Say About theHam</h1>
+            <div class="feedback__header header-center">
+                <h1 class="mb-24">What People Say About theHam</h1>
+                <img src="./img/general/Style copy 2.svg" alt="" class="header-icon">
+            </div>
             <div class="feedback-slider container">
                 <div class="feedback-container">
                     <p class="feeback-comment">1nteger dignissim, augue tempus ultricies luctus, quam dui laoreet sem, non dictum odio nisi quis massa. 
@@ -267,7 +281,10 @@
     <!-----------------------------------GALLERY SECTION--------------------------------------------------->
     <section class="gallery-section">
         <div class="gallery container">
-            <h1 class="gallery__header">Gallery of best images</h1>
+            <div class="gallery__header header-center">
+                <h1 class="mb-24" >Gallery of best images</h1>
+                <img src="./img/general/Style copy 2.svg" alt="" class="header-icon">
+            </div>
             <div class="gallery__img-container">
                 <img src="./img/gallery__section/vanglo-house-1 1.png" class="gallery__item" alt="">
                 <img src="./img/gallery__section/vanglo-house-6 1.png" class="gallery__item" alt="">
@@ -303,11 +320,12 @@
                 <img src="./img/gallery__section/80493541_1281644acb_o 1.png" class="gallery__item hidden-img" alt="">
 
             </div>
+            
             <button id="gallery__btn" class="btn btn--green load-more--btn">load more</button>
         </div>
     </section>
     <footer class="footer-section">
-        <p class="copyright">© Copyright 2015 theHam | All Rights Reserved</p>
+        <p class="copyright">© Copyright 2015 <span class="footer-logo highlight--green">theHam</span><span class="pd seperator highlight--green"></span>All Rights Reserved</p>
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="./js/index.js"></script>

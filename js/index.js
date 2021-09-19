@@ -116,7 +116,7 @@ fetch("pictures.json")
         <img src="${blog.url}" alt="" class="breaking-news__img">
         <div class="breaking-news__info">
           <h3 class="breaking-news__title">${blog.title}</h3>
-          <p class="breaking-news__text">${blog.author}<span class="breaking-news__author"></span>${blog.commentsNo} comment</p>
+          <p class="breaking-news__text">${blog.author}<span class="seperator"></span>${blog.commentsNo} comment</p>
         </div>
         `
       newsContainer.appendChild(newsWrapper)
@@ -130,6 +130,7 @@ fetch("pictures.json")
     let galleryItems = 8;
     const galleryContainer = document.querySelector('.gallery__img-container')
     const elementList = [...document.querySelectorAll('.gallery .gallery__item')]
+    
     for (let i = galleryItems; i< galleryItems + 4; i++){
       if (elementList[i]){
         galleryContainer.style.height = '1500px'

@@ -46,14 +46,32 @@
 .menu{
     display: flex;
     list-style: none;
-    text-transform: uppercase;
-    color: rgba(255, 255, 255, 0.6);
-    
-    
+    max-height: 120px;
 }
 .menu__item{
-    padding: 0 21px;
+    padding: 0 10px;
+    
+}
+
+.menu__item >a{
+    display:inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
     line-height: 120px;
+    color: rgba(255, 255, 255, 0.6)
+}
+
+.menu__item > a:hover{
+    color:#18CFAB;
+    border-bottom: 2px solid #18CFAB;
+    
+}
+.search-icon{
+    max-width: 20px;
+    max-height: 20px;
+    padding-left: 10px;
+    margin: auto 0;
 }
 .header__content-container{
     display: flex;
@@ -90,6 +108,9 @@
     line-height: 32px;
     text-transform: uppercase;
     color: #FFFFFF;
+    border: none;
+    border-top: 5px solid #FFFFFF;
+    border-radius: 5px;
 
 }
 
@@ -271,13 +292,6 @@
     color: #777777;
     font-weight: 300;
 }
-.breaking-news__author{
-    display: inline-block;
-    height: 10px;
-    margin-left: 10px;
-    margin-right: 10px;
-    border-right: 1px solid #777777;
-}
 /*===================FEEDBACK-SECTION==============*/
 .feedback-section{
     background-image: url(../img/feedback_section/Layer\ 333.jpg);
@@ -297,7 +311,10 @@
 .feedback__header{
     font-size: 36px;
     color: #FFFFFF;
-    margin-bottom: 168px;
+    margin-bottom: 135px;
+}
+.mb-24{
+    margin-bottom: 24px;
 }
 .feedback-slider{
     display: flex;
@@ -401,6 +418,7 @@
 .gallery__img-container{
     display: flex;
     flex-direction: column;
+    align-items: center;
     flex-wrap: wrap;
     height: 921px;
     margin-bottom: 52px;
@@ -409,7 +427,8 @@
     text-align: center;
 }
 .gallery__item{
-    margin: 5px 10px;
+    margin: 5px 0;
+   width: fit-content;
 }
 .item-a {
     grid-area: firstRow;
@@ -446,6 +465,9 @@
     line-height: 26px;
     color: #AEAEAE;
 }
+.copyright > .footer-logo{
+    font-weight: inherit;
+}
 
 
 
@@ -454,6 +476,12 @@
 /*===================reusable css rules==============*/
 .hidden-img{
     display: none;
+}
+.header-center{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .tab-active{
     background:#18CFAB ;
@@ -477,6 +505,17 @@
 .highlight--green{
     color: #18CFAB;
     font-weight: bold;
+}
+.seperator{
+    display: inline-block;
+    height: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-right: 1px solid #777777;
+}
+.pd{
+    margin-left: 5px;
+    margin-right: 5px;
 }
 .btn{
     text-transform: uppercase;
