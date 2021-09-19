@@ -1,25 +1,20 @@
-
-
-  {
-    "images" :{
+{
+  "images": {
     "1": {
       "name": "",
       "category": "web design",
       "url": "./img/StepProjectHam/WebDesign/web-design1.jpg"
     },
-  
     "2": {
       "name": "",
       "category": "graphics design",
       "url": "./img/StepProjectHam/GraphicDesign/graphic-design1.jpg"
     },
-  
     "3": {
       "name": "",
       "category": "landing page",
       "url": "./img/StepProjectHam/LandingPage/landing-page1.jpg"
     },
-  
     "4": {
       "name": "",
       "category": "wordpress",
@@ -30,19 +25,16 @@
       "category": "web design",
       "url": "./img/StepProjectHam/WebDesign/web-design2.jpg"
     },
-  
     "6": {
       "name": "",
       "category": "graphics design",
       "url": "./img/StepProjectHam/GraphicDesign/graphic-design1.jpg"
     },
-  
     "7": {
       "name": "",
       "category": "landing page",
       "url": "./img/StepProjectHam/LandingPage/landing-page2.jpg"
     },
-  
     "8": {
       "name": "",
       "category": "wordpress",
@@ -53,19 +45,16 @@
       "category": "web design",
       "url": "./img/StepProjectHam/WebDesign/web-design3.jpg"
     },
-  
     "10": {
       "name": "",
       "category": "graphics design",
       "url": "./img/StepProjectHam/GraphicDesign/graphic-design1.jpg"
     },
-  
     "11": {
       "name": "",
       "category": "landing page",
       "url": "./img/StepProjectHam/LandingPage/landing-page3.jpg"
     },
-  
     "12": {
       "name": "",
       "category": "wordpress",
@@ -76,19 +65,16 @@
       "category": "web design",
       "url": "./img/StepProjectHam/WebDesign/web-design4.jpg"
     },
-  
     "14": {
       "name": "",
       "category": "graphics design",
       "url": "./img/StepProjectHam/GraphicDesign/graphic-design1.jpg"
     },
-  
     "15": {
       "name": "",
       "category": "landing page",
       "url": "./img/StepProjectHam/LandingPage/landing-page4.jpg"
     },
-  
     "16": {
       "name": "",
       "category": "wordpress",
@@ -99,19 +85,16 @@
       "category": "web design",
       "url": "./img/StepProjectHam/WebDesign/web-design5.jpg"
     },
-  
     "18": {
       "name": "",
       "category": "graphics design",
       "url": "./img/StepProjectHam/GraphicDesign/graphic-design1.jpg"
     },
-  
     "19": {
       "name": "",
       "category": "landing page",
       "url": "./img/StepProjectHam/LandingPage/landing-page5.jpg"
     },
-  
     "20": {
       "name": "",
       "category": "wordpress",
@@ -122,19 +105,16 @@
       "category": "web design",
       "url": "./img/StepProjectHam/WebDesign/web-design6.jpg"
     },
-  
     "22": {
       "name": "",
       "category": "graphics design",
       "url": "./img/StepProjectHam/GraphicDesign/graphic-design1.jpg"
     },
-  
     "23": {
       "name": "",
       "category": "landing page",
       "url": "./img/StepProjectHam/LandingPage/landing-page6.jpg"
     },
-  
     "24": {
       "name": "",
       "category": "wordpress",
@@ -143,21 +123,18 @@
     "25": {
       "name": "",
       "category": "web design",
-      "url":"./img/StepProjectHam/WebDesign/web-design7.jpg"
+      "url": "./img/StepProjectHam/WebDesign/web-design7.jpg"
     },
-  
     "26": {
       "name": "",
       "category": "graphics design",
       "url": "./img/StepProjectHam/GraphicDesign/graphic-design1.jpg"
     },
-  
     "27": {
       "name": "",
       "category": "landing page",
       "url": "./img/StepProjectHam/LandingPage/landing-page7.jpg"
     },
-  
     "28": {
       "name": "",
       "category": "wordpress",
@@ -168,7 +145,6 @@
       "category": "graphics design",
       "url": "./img/StepProjectHam/GraphicDesign/graphic-design1.jpg"
     },
-  
     "30": {
       "name": "",
       "category": "wordpress",
@@ -179,13 +155,11 @@
       "category": "graphics design",
       "url": "./img/StepProjectHam/GraphicDesign/graphic-design1.jpg"
     },
-  
     "32": {
       "name": "",
       "category": "wordpress",
       "url": "./img/StepProjectHam/wordpress/wordpress9.jpg"
     },
-  
     "33": {
       "name": "",
       "category": "graphics design",
@@ -196,7 +170,6 @@
       "category": "wordpress",
       "url": "./img/StepProjectHam/wordpress/wordpress10.jpg"
     },
-  
     "35": {
       "name": "",
       "category": "graphics design",
@@ -207,6 +180,64 @@
       "category": "graphics design",
       "url": "./img/StepProjectHam/GraphicDesign/graphic-design1.jpg"
     }
-  }
+  },
+  "articles": {
+    "1": {
+      "author": "By Admin",
+      "title": "Amazing Blog Post",
+      "postDate": "12 feb",
+      "commentsNo": "2",
+      "url": "./img/StepProjectHam/GraphicDesign/graphic-design1.jpg"
+    },
+    "2": {
+      "author": "By Admin",
+      "title": "Amazing Blog Post",
+      "postDate": "12 feb",
+      "commentsNo": "2",
+      "url": "./img/StepProjectHam/wordpress/wordpress8.jpg"
+    },
+    "3": {
+      "author": "By Admin",
+      "title": "Amazing Blog Post",
+      "postDate": "12 feb",
+      "commentsNo": "2",
+      "url": "./img/StepProjectHam/GraphicDesign/graphic-design1.jpg"
+    },
+    "4": {
+      "author": "By Admin",
+      "title": "Amazing Blog Post",
+      "postDate": "12 feb",
+      "commentsNo": "2",
+      "url": "./img/StepProjectHam/wordpress/wordpress9.jpg"
+    },
+    "5": {
+      "author": "By Admin",
+      "title": "Amazing Blog Post",
+      "postDate": "12 feb",
+      "commentsNo": "2",
+      "url": "./img/StepProjectHam/GraphicDesign/graphic-design1.jpg"
+    },
+    "6": {
+      "author": "By Admin",
+      "title": "Amazing Blog Post",
+      "postDate": "12 feb",
+      "commentsNo": "2",
+      "url": "./img/StepProjectHam/wordpress/wordpress10.jpg"
+    },
+    "7": {
+      "author": "By Admin",
+      "title": "Amazing Blog Post",
+      "postDate": "12 feb",
+      "commentsNo": "2",
+      "url": "./img/StepProjectHam/GraphicDesign/graphic-design1.jpg"
+    },
+    "8": {
+      "author": "By Admin",
+      "title": "Amazing Blog Post",
+      "postDate": "12 feb",
+      "commentsNo": "2",
+      "url": "./img/StepProjectHam/GraphicDesign/graphic-design1.jpg"
     }
-  
+  }
+
+}

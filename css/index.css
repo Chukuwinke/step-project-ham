@@ -181,23 +181,18 @@
     color: #D8D8D8;
     margin-bottom: 62px;
 }
-.purchase__btn{
-    width: 168px;
-    line-height: 63px;
-    font-size: 15px;
-    font-weight: bold;
-    color: #FFFFFF;
-}
+
 /*===================WORK-SECTION==============*/
 .work-section{
     display: flex;
     justify-content: center;
+    background: #E9EDEF;
+    padding: 99px 0;
 }
 .work{
     display: inherit;
     flex-direction: column;
     align-items: center;
-    margin: 96px 0 99px;
 }
 .work__header{
     font-size: 36px;
@@ -208,13 +203,16 @@
     display: flex;
     justify-content: center;
     width: 589px;
+    margin-bottom: 71px;
     background: rgba(0, 0, 0, 0.0001);
 }
+
 .work__tab{
     display:flex;
     flex-direction: column;
     align-items: center;
 }
+
 .tabs__title{
     line-height: 62px;
     font-size: 14px;
@@ -226,15 +224,60 @@
 .work-tabs-img__container{
     display: flex;
     flex-wrap: wrap;
+    margin-bottom: 70px;
     
 }
-.all{
+
+/*.all{
     width: 56px;
     text-align: center;
-    padding: 0;
-}
+}*/
 /*===================BREAKING-NEWS-SECTION==============*/
 
+.breaking-news-section{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 82px 0;
+}
+.breaking-news__header{
+    color: #4E4E4E;
+    font-size: 36px;
+    margin-bottom: 100px;
+}
+.breaking-news{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.breaking-news__card{
+    max-width:263px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 46px;
+}
+.breaking-news__info{
+    padding-left: 15px;
+}
+.breaking-news__title{
+    font-weight: bold;
+    font-size: 17.9885px;
+    color: #717171;
+    padding-top: 20px;
+}
+.breaking-news__text{
+    font-size: 13.991px;
+    line-height: 39px;
+    color: #777777;
+    font-weight: 300;
+}
+.breaking-news__author{
+    display: inline-block;
+    height: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-right: 1px solid #777777;
+}
 /*===================FEEDBACK-SECTION==============*/
 .feedback-section{
     background-image: url(../img/feedback_section/Layer\ 333.jpg);
@@ -347,6 +390,12 @@
 .gallery-section{
     display: flex;
     justify-content: center;
+    padding: 108px 0 80px;
+}
+.gallery__header{
+    font-size: 36px;
+    color: #4E4E4E;
+    margin-bottom: 115px;
 }
 
 .gallery__img-container{
@@ -354,6 +403,7 @@
     flex-direction: column;
     flex-wrap: wrap;
     height: 921px;
+    margin-bottom: 52px;
 }
 .gallery{
     text-align: center;
@@ -384,6 +434,18 @@
     "bottomRow bottomRow bottomRow";
 }
 
+.footer-section{
+    background: #22353F;
+    display: flex;
+    justify-content: center;
+    padding: 48px 0;
+}
+.copyright{
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 26px;
+    color: #AEAEAE;
+}
 
 
 
@@ -434,6 +496,15 @@
 .btn--blue{
     background: #00CBF6;
     
+}
+.load-more--btn{
+    position: relative;
+}
+.load-more--btn::before{
+    content: url(../img/general/plus.png);
+    position: relative;
+    top: 4%;
+    right: 5%;
 }
 
 .options__container--dark{
