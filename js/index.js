@@ -6,6 +6,7 @@ const workImgContainer = document.querySelector(".work-tabs-img__container");
 let newsContainer = document.querySelector('.breaking-news')
 let linkName;
 
+//SERVICES SECTION LOGIC
 $(".services-tabs-content li").first().css("display", "flex");
 $(".services-tabs__title").first().addClass("tab-active");
 $(".services-tabs__title").click(function () {
@@ -16,12 +17,13 @@ $(".services-tabs__title").click(function () {
   $("#" + linkName).css("display", "flex ");
 });
 
-fetch("pictures.json")
+fetch("data.json")
   .then((response) => response.json())
   .then((data) => {
     let links = Object.values(data.images);
     let blogs = Object.values(data.articles)
-    //console.log(blogs)
+   
+    //WORK SECTION LOGIC
     //function to populate work image container with images
     const imageBox = (links, imgItems) => {
       if (document.contains(imgItems)) {
@@ -59,7 +61,7 @@ fetch("pictures.json")
       }
     };
 
-    //WORK SECTION
+    
     // clicking a button targets one of the tabs
     tabItems[0].style.border ='2px solid #18CFAB '
     tabs.onclick = (event) => {
@@ -91,7 +93,6 @@ fetch("pictures.json")
       let loadedDefaultArr = [];
       for (let i = currentItems; i < currentItems + 12; i++) {
           loadedDefaultArr.push(allDefaultImgs[i].url)
-        console.log(currentItems)
       }
       loadedDefaultArr.forEach(element => {
         let image = document.createElement("img");
@@ -107,12 +108,14 @@ fetch("pictures.json")
       
     }
     
-    // breaking news
-    //console.log(blogs.author)
+    // BREAKING NEWS SECTION LOGIC
     blogs.map(blog => {
       const newsWrapper = document.createElement('div')
       newsWrapper.className = 'breaking-news__card'
       newsWrapper.innerHTML =`
+        <div class="date-container">
+          <p class="date">${blog.postDate}</p>
+        </div>
         <img src="${blog.url}" alt="" class="breaking-news__img">
         <div class="breaking-news__info">
           <h3 class="breaking-news__title">${blog.title}</h3>
@@ -125,7 +128,7 @@ fetch("pictures.json")
   })
   .catch((error) => console.log(error));
 
-  //GALLERY SECTION
+  //GALLERY SECTION LOGIC
   galleryButton.onclick = (event) => {
     let galleryItems = 8;
     const galleryContainer = document.querySelector('.gallery__img-container')
@@ -144,7 +147,7 @@ fetch("pictures.json")
     }
   }
 
-  // feedback logic
+  // FEEBACK SECTION LOGIC
 let sliderThumbnails = document.querySelectorAll('.slider-thumbnail');
 let sliderContent = document.querySelectorAll('.feedback-container')
 let arrowLeft = document.getElementById('arrow-left')
@@ -173,8 +176,6 @@ let current = 0;
     sliderThumbnails[current - 1].style.position = 'relative'
     sliderThumbnails[current - 1].style.bottom = '15px'
     current--;
-    console.log('left')
-
   }
   const slideRight = () =>{
     reset();
@@ -182,10 +183,7 @@ let current = 0;
     sliderThumbnails[current + 1].style.position = 'relative'
     sliderThumbnails[current + 1].style.bottom = '15px'
     current++;
-    console.log('right')
-
   }
-
   arrowRight.onclick = () => {
     if(current === sliderThumbnails.length - 1){
       current = -1;
@@ -195,9 +193,7 @@ let current = 0;
   arrowLeft.onclick = () => {
     if(current === 0){
       current = sliderThumbnails.length;
-      
     }
-    
     slideLeft();
   }
   initialContent();
